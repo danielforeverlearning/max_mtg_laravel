@@ -34,4 +34,10 @@ because you did a laravel install on windows and when sftp to cloudsite the dire
 permissions were not ok for /storage and /bootstrap/cache
 and then you got the"whoops laravel error" on home page of laravel app.
 
+(6)
+git add .
+git commit -m "put message here"
+git push <url> <branch>
+
+
 
