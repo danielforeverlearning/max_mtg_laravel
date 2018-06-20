@@ -4,18 +4,30 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
+use App\MyTestClass;
 
 class MyHomeController extends Controller
 {
+      public $mytestobj = null;
 
       public function showbravo()
 	  {
-		   return view('bravo');
+	       $this->mytestobj = new MyTestClass();
+	       if (is_null($this->mytestobj))
+	            $teststr = 'mytestobj is null';
+	        else
+	            $teststr = "mytestobj is NOT null myname is " . $this->mytestobj->myname;
+		   return view('bravo', ['myteststr' => $teststr]);
 	  }
 
 	  public function showcharlie($name = 'defaultnamehere')
 	  {
-		   return View::make('charlie', ['myviewname' => $name]);
+	        if (is_null($this->mytestobj))
+	            $teststr = 'mytestobj is null';
+	        else
+	            $teststr = 'mytestobj is NOT null';
+	       
+		    return View::make('charlie', ['myviewname' => $name, 'myteststr' => $teststr]);
 	  }
 	  
 	  public function showecho()
