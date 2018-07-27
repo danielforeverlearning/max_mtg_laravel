@@ -115,6 +115,23 @@ class MyHomeController extends Controller
                     break;
             }
             
+            DB::connection('mysql')->delete('DELETE FROM ActualCards WHERE player_id = 1');
+            for ($ii=0; $ii < $current_deck_count; $ii++)
+            {
+                $dcindex = $ActualCards[$ii];
+                $mystr = sprintf("INSERT ActualCards (myindex, player_id, deck_card_id, pic_filename, card_type, mana_cost, effects) VALUES ('%d', 1, '%d', '%s', '%s', '%s', '%d')", $ii, $rows[$dcindex]->id, $rows[$dcindex]->pic_filename, $rows[$dcindex]->card_type, $rows[$dcindex]->mana_cost, $rows[$dcindex]->effects);
+                DB::connection('mysql')->insert($mystr);
+            }
+            
+            DB::connection('mysql')->delete('DELETE FROM Hand WHERE player_id = 1');
+            for ($ii=0; $ii < count($hand); $ii++)
+            {
+                $mystr = sprintf("INSERT Hand (myindex, player_id, deck_card_id, pic_filename, card_type, mana_cost, effects) VALUES ('%d', 1, '%d', '%s', '%s', '%s', '%d')", $ii, $hand[$ii]->id, $hand[$ii]->pic_filename, $hand[$ii]->card_type, $hand[$ii]->mana_cost, $hand[$ii]->effects);
+                DB::connection('mysql')->insert($mystr);
+            }
+            
+            
+            
             $result = ["deck_name" => "red_deck", $hand];
 	        return view('shuffle', ['mydata' => $result]);
 	       
