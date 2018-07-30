@@ -1,0 +1,84 @@
+array(2) 
+{
+ ["deck_name"]=> string(8) "red_deck" 
+ [0]=> array(9) { 
+							[0]=> object(stdClass)#195 (6) {	
+												["id"]=> string(1) "1" 
+												["pic_filename"]=> string(17) "land_mountain.jpg"
+												["card_count"]=> string(2) "28"
+												["card_type"]=> string(4) "LAND"
+												["mana_cost"]=> string(1) "0"
+												["effects"]=> string(1) "0"
+											}
+
+							[1]=> object(stdClass)#197 (6) {
+												["id"]=> string(1) "2"
+												["pic_filename"]=> string(26) "instant_lightning_bolt.jpg"
+												["card_count"]=> string(1) "4"
+												["card_type"]=> string(7) "INSTANT"
+												["mana_cost"]=> string(4) "1RED"
+												["effects"]=> string(1) "1"
+											}
+
+							[2]=> object(stdClass)#198 (6) {
+												["id"]=> string(1) "3"
+												["pic_filename"]=> string(30) "enchantment_goblin_assault.jpg"
+												["card_count"]=> string(1) "4"
+												["card_type"]=> string(11) "ENCHANTMENT"
+												["mana_cost"]=> string(15) "2COLORLESS_1RED"
+												["effects"]=> string(1) "2"
+											}
+
+							[3]=> object(stdClass)#199 (6) {
+												["id"]=> string(1) "4"
+												["pic_filename"]=> string(26) "creature_raging_goblin.jpg"
+												["card_count"]=> string(1) "4"
+												["card_type"]=> string(8) "CREATURE"
+												["mana_cost"]=> string(4) "1RED"
+												["effects"]=> string(1) "3"
+											}
+
+							[4]=> object(stdClass)#200 (6) {
+												["id"]=> string(1) "5"
+												["pic_filename"]=> string(28) "creature_goblin_gardener.jpg"
+												["card_count"]=> string(1) "4"
+												["card_type"]=> string(8) "CREATURE"
+												["mana_cost"]=> string(15) "3COLORLESS_1RED"
+												["effects"]=> string(1) "4"
+											}
+
+							[5]=> object(stdClass)#201 (6) {
+												["id"]=> string(1) "6"
+												["pic_filename"]=> string(29) "creature_goblin_chieftain.jpg"
+												["card_count"]=> string(1) "4"
+												["card_type"]=> string(8) "CREATURE"
+												["mana_cost"]=> string(15) "1COLORLESS_2RED"
+												["effects"]=> string(1) "5"
+											}
+
+							[6]=> object(stdClass)#202 (6) {
+												["id"]=> string(1) "7"
+												["pic_filename"]=> string(31) "creature_goblin_bushwhacker.jpg"
+												["card_count"]=> string(1) "4"
+												["card_type"]=> string(8) "CREATURE"
+												["mana_cost"]=> string(4) "1RED"
+												["effects"]=> string(1) "6"
+											}
+
+							[7]=> object(stdClass)#203 (6) {
+												["id"]=> string(1) "8"
+												["pic_filename"]=> string(28) "creature_goblin_arsonist.jpg"
+												["card_count"]=> string(1) "4"
+												["card_type"]=> string(8) "CREATURE"
+												["mana_cost"]=> string(4) "1RED"
+												["effects"]=> string(1) "7"
+											}
+
+							[8]=> object(stdClass)#204 (6) {
+												["id"]=> string(1) "9" ["pic_filename"]=> string(28) "creature_frenzied_goblin.jpg"
+												["card_count"]=> string(1) "4" 
+												["card_type"]=> string(8) "CREATURE" 
+												["mana_cost"]=> string(4) "1RED" ["effects"]=> string(1) "8" 
+											} 
+		} 
+}

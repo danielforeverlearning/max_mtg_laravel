@@ -36,6 +36,14 @@ class MyHomeController extends Controller
 	      return view('echo', ['myrows' => $rows]);
 	  }
 	  
+	  public function do_lobby()
+	  {
+	        $ip   = $_SERVER['REMOTE_ADDR'];
+	        $port = $_SERVER['REMOTE_PORT'];
+	        $connect_info = array("ip" => $ip, "port" => $port);
+	        return view('lobby', ['mydata' => $connect_info]);
+	  }
+	  
 	  public function do_shuffle()
 	  {
 	        $rows = DB::connection('mysql')->select('select * from red_deck');

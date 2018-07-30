@@ -33,3 +33,5 @@ Route::get('firstchild', function() {
 
 Route::get('shuffle', 'MyHomeController@do_shuffle');
 
+Route::get('lobby', 'MyHomeController@do_lobby');
+
